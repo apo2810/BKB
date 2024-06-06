@@ -69,6 +69,10 @@ h6 {
   font-weight: 700;
   font-style: normal;
 }
+h2{
+  
+  color: var(--color-default);
+}
 .container{
   padding: 60px ;
 }
@@ -209,7 +213,7 @@ section {
 .section-header h2 {
   font-size: 32px;
   position: relative;
-  color: var(--color-primary);
+  color: var(--color-default);
 }
 
 .section-header p {
@@ -269,7 +273,7 @@ img:hover {
 }
 
 .breadcrumbs .page-header h2 {
-  color: var(--color-primary);
+  color: var(--color-default);
 }
 
 .breadcrumbs .page-header p {
@@ -1543,7 +1547,7 @@ section {background: var(--light-color);}
 .hero h2 {
   font-size: 40px;
   margin-bottom: 20px;
-  color: var(--hero-text-color);
+  color: var(--color-default);
   text-transform: capitalize;
   letter-spacing: 0.7px;
   font-weight: 600;
@@ -1896,7 +1900,7 @@ dl, ol, ul {
     position: relative;
     margin: 20px 0 0;
     padding: 0;
-    color: var(--text-color);
+    color: var(--color-default);
     font-size: 28px;
     z-index: 2;
 }
