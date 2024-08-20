@@ -161,7 +161,6 @@ h1{
 /* Animation */
 .image-list-section-w {
   background-color: white;
-  align-items: center;
 }
 .image-list-section .left {
   flex: 1;
