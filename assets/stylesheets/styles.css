@@ -44,7 +44,7 @@
 body {
   font-family: var(--font-default);
   color: var(--text-color);
-  background: var(--theme-color);
+  background: var(--color-default);
   transition: 0.5s background ease;
   overflow-x: hidden;
 }
@@ -70,8 +70,11 @@ h6 {
   font-style: normal;
 }
 h2{
-  
+  text-shadow: 2px 2px #d4c1a3;
   color: var(--color-default);
+}
+h1{
+  text-shadow: 2px 2px #d4c1a3;
 }
 .container{
   padding: 60px ;
@@ -108,17 +111,44 @@ h2{
   justify-content: space-between;
   padding: 40px;
   text-align: justify;
+  background-color: white;
+  
+}
+.image-list-section-d {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 40px;
+  text-align: justify;
+  background-color: white;
+  display: flex;
+  gap: 20px; /* Espacement entre les deux sections */
+  
 }
 .image-list-section-w {
   background-color: white;
   align-items: center;
+
+  padding: 40px;
 }
 .image-list-section .left {
   flex: 1;
   color: white;
   padding: 20px;
+  background-color: var(--color-default);
+}
+.image-list-section-d .left {
+  flex: 1;
+  color: white;
+  padding: 20px;
+  background-color: var(--color-default);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 .image-list-section .left li {
+  color: white; 
+}
+.image-list-section-d .left li {
   color: white; 
 }
 .image-list-section .left li span {
@@ -128,17 +158,66 @@ h2{
     flex: 1;
     text-align: center;
   }
+  .image-list-section .centerw{
+    background-color: white;
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .image-list-section-d .left li span {
+    color: #6d7f6d; 
+    }
+    .image-list-section-d .center {
+      flex: 1;
+      text-align: center;
+    }
+    .image-list-section-d .centerw{
+      background-color: white;
+      flex: 1;
+      text-align: center;
+    }
 .image-list-section .right {
   flex: 1;
   text-align: left;
 }
+.image-list-section-d .right {
+  flex: 1;
+  text-align: center;
+}
 .image-list-section img:hover{
-
+  transform: scale(0.9);
+}
+.image-list-section-d img:hover{
   transform: scale(0.9);
 }
 .image-list-section img {
   max-width: 100%;
   height: auto;
+}
+.image-list-section-d img {
+  max-width: 100%;
+  height: auto;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .image-list-section-d {
+      flex-direction: column;
+      gap: 0; /* Pas d'espacement entre les sections sur mobile */
+  }
+
+  .image-list-section-d .left, .centerw {
+      flex: none;
+      width: 100%; /* Chaque section prend toute la largeur */
+      margin-bottom: 20px; /* Espacement entre les sections sur mobile */
+      border-radius: 0; /* Supprime les coins arrondis pour coller aux bords de l'écran */
+      box-shadow: none; /* Supprime l'ombre pour un design plus plat sur mobile */
+  }
+
+  .image-list-section-d .centerw {
+      margin-bottom: 0; /* Enlève l'espacement pour la dernière section sur mobile */
+  }
 }
 
 /* Animation */
@@ -1989,7 +2068,7 @@ dl, ol, ul {
 
 .contact-information-box-3 .contact-info h6 {
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--color-light);
   margin-bottom: 7px;
   text-transform: capitalize;
 }
@@ -2412,3 +2491,56 @@ th {
   width: 130px;
   align-items: center;
 }
+
+.retro-section {
+  background-color: var(--color-secondary);
+  padding: 50px 0;
+  text-align: center;
+}
+
+.retro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.retro-header h2 {
+  font-size: 3rem;
+  color: var(--color-default);
+  margin-bottom: 50px;
+  text-shadow: 3px 3px #deb887;
+}
+
+.retro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.retro-card {
+  background-color: #ffe4c4;
+  border: 2px solid var(--color-default);
+  padding: 25px;
+  box-shadow: 5px 5px #deb887;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.retro-card:hover {
+  transform: translateY(-10px);
+}
+
+.retro-logo img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.retro-card p {
+  font-size: 1.5rem;
+  color: #8b4513;
+}
+/* films actifs */
