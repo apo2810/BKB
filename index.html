@@ -29,6 +29,7 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   <!-- Main CSS File -->
   <link href="assets/stylesheets/styles.css" rel="stylesheet">
 
@@ -96,13 +97,39 @@
 
   <!--  Hero Section  -->
   <section id="hero" class="hero sticked-header-offset position-relative">
-    <video autoplay muted loop class="video-bg position-absolute top-0 left-0 min-w-full min-h-full">
+    <!-- Vidéo avec ID ajouté -->
+    <video id="bg-video" autoplay muted loop class="video-bg position-absolute top-0 left-0 min-w-full min-h-full">
       <source src="video-bkb.mp4" type="video/mp4">
-      <!-- Fournir des alternatives pour différents formats de vidéo -->
+      <!-- Message de fallback -->
       Votre navigateur ne prend pas en charge la lecture de vidéos HTML5.
+      <img src="image-bkb.jpg" alt="Description de la vidéo">
     </video>
-    
+  
+    <!-- Bouton avec une icône de son (muted par défaut) -->
+    <button id="play-video" style="position: absolute; z-index: 1000; top: 10px; right: 10px; background-color: #6d7f6d; padding: 10px; border: none; cursor: pointer;">
+      <i id="sound-icon" class="fas fa-volume-mute" style="color: white; transition: color 0.3s ease;"></i> <!-- Icône de son initialement en mode muet -->
+      <span class="sr-only">Contrôle du son</span> <!-- Améliore l'accessibilité -->
+    </button>
+  
+    <script>
+      const video = document.getElementById('bg-video');
+      const playButton = document.getElementById('play-video');
+      const soundIcon = document.getElementById('sound-icon');
+  
+      // Ajoute un événement sur le bouton pour démarrer la vidéo avec le son
+      playButton.addEventListener('click', () => {
+        if (video.muted) {
+          video.muted = false;
+          soundIcon.className = 'fas fa-volume-up'; // Change l'icône en "son activé"
+        } else {
+          video.muted = true;
+          soundIcon.className = 'fas fa-volume-mute'; // Change l'icône en "son désactivé"
+        }
+        video.play();
+      });
+    </script>
   </section>
+
   <!-- End Hero Section -->
 
   <main id="main">
@@ -228,7 +255,20 @@
   <script src="assets/javascripts/validator.min.js"></script>
   <script src="assets/javascripts/contactform.js"></script>
   <script src="assets/javascripts/script.js"></script>
+  <script>
+    const video = document.getElementById('bg-video');
+    const soundButton = document.getElementById('toggle-sound');
 
+    soundButton.addEventListener('click', () => {
+      if (video.muted) {
+        video.muted = false;
+        soundButton.textContent = 'Désactiver le son';
+      } else {
+        video.muted = true;
+        soundButton.textContent = 'Activer le son';
+      }
+    });
+  </script>
   <!-- Template Main JS File -->
   <script src="assets/javascripts/main.js"></script>
 
