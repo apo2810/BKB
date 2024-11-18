@@ -244,9 +244,9 @@
                             <h3>Contacts</h3>
                         </div>
                           <div class="footer-text">
-                              <p><i class="bi bi-geo-alt-fill mr-15"></i> 117 Avenue du Président Salvador Allende 93100 Montreuil</p>
-                              <p><i class="bi bi-telephone-inbound-fill mr-15"></i>Tel: 01 48 11 12 26</p>
-                              <p><i class="bi bi-envelope-fill mr-15"></i> contact@fsesecurite.fr</p>
+                              <p><i class="bi bi-geo-alt-fill mr-15"></i>155-159-- BATIMENT ENERGY 5, 155 RUE DU DOCTEUR BAUER, 93400 SAINT-OUEN-SUR-SEINE</p>
+                              <p><i class="bi bi-telephone-inbound-fill mr-15"></i>Tel: 06 25 26 88 65</p>
+                              <p><i class="bi bi-envelope-fill mr-15"></i> @mail.fr</p>
                           </div>
                     </div>
                     <div class="service-widget footer-widget">
