@@ -2052,21 +2052,6 @@ textarea.form-control {
   resize: vertical;
 }
 
-/* Bouton */
-.btn-get-started {
-  display: block;
-  margin: 20px auto 0;
-  padding: 14px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #6a8f78;
-  border: none;
-  border-radius: 8px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-}
 
 .btn-get-started:hover {
   background-color: #5e816a;
