@@ -48,7 +48,6 @@ body {
   transition: 0.5s background ease;
   overflow-x: hidden;
 }
-
 a {
   color: var(--color-primary);
   text-decoration: none;
@@ -2009,7 +2008,108 @@ dl, ol, ul {
     color: var(--text-color);
     font-size: 16px;
 }
+/**************************************
+  Contact test
+ **************************************/
+ /* Formulaire global */
+.contact-form-3 {
+  width: 70%; /* Ajuste la largeur globale du formulaire */
+  margin: 0 auto;
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
+/* Organisation en deux colonnes */
+.form-group-row {
+  display: flex; /* Flexbox pour aligner les éléments */
+  align-items: center; /* Aligne verticalement */
+  margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+h6 {
+  flex: 0 0 30%; /* Colonne pour les labels (30% de la largeur) */
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d3b08b; /* Couleur beige */
+  text-transform: uppercase;
+}
+
+.form-control {
+  flex: 1; /* Colonne pour les champs */
+  font-size: 16px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4d3723; /* Marron foncé */
+  color: #ffffff;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Bouton */
+.btn-get-started {
+  display: block;
+  margin: 20px auto 0;
+  padding: 14px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #6a8f78;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-get-started:hover {
+  background-color: #5e816a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-group-row {
+    flex-direction: column; /* Passe en colonne sur petit écran */
+    align-items: flex-start; /* Aligne les éléments à gauche */
+  }
+
+  h6 {
+    margin-bottom: 5px; /* Ajoute un espace sous le label */
+  }
+
+  .form-control {
+    width: 100%; /* Champs prennent toute la largeur */
+  }
+}
+/* Champs de saisie (Inputs et Textarea) */
+.form-control {
+  flex: 1; /* Colonne pour les champs */
+  font-size: 16px;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4d3723; /* Marron foncé pour le fond */
+  color: #3c2a19; /* Marron pour le texte saisi */
+  margin-bottom: 20px;
+}
+
+textarea.form-control {
+  min-height: 100px;
+  resize: vertical;
+  color: #03b103;
+}
+
+/* Placeholder */
+.form-control::placeholder {
+  color: #d6d6d6; /* Placeholder en gris clair */
+  font-style: italic;
+}
 
 /**************************************
   Contact
@@ -2019,7 +2119,6 @@ dl, ol, ul {
   width: 100%;
   padding: 10px 20px;
   height: 52px;
-  color: #fff;
   border: none;
   border-radius: 8px;
   text-transform: capitalize;
