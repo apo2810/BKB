@@ -2033,7 +2033,7 @@ h6 {
   margin: 0;
   font-size: 16px;
   font-weight: bold;
-  color: #d3b08b; /* Couleur beige */
+  color: var(--color-default); /* Couleur beige */
   text-transform: uppercase;
 }
 
