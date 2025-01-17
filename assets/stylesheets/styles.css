@@ -1274,6 +1274,17 @@ section {background: var(--light-color);}
     opacity: 0;
   }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--color-default); /* Couleur bleue */
+  border-radius: 50%; /* Pour arrondir les bords */
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+}
+
+
+
 
 
 /*--------------------------------------------------------------
