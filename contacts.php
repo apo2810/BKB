@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Contact FSE</title>
+  <title>Contact BKB</title>
   <meta content="" name="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
   <meta name="description" content="Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -262,7 +262,7 @@
             <div class="row">
                 <div class="col-xl-6 col-lg-6 text-left text-lg-left">
                     <div class="copyright-text">
-                        <p>FSE © 2024 - Designé par <a href="https://studio-allgraphic.com/" target="_blank"> Studio All'graphic</a></p>
+                        <p>BKB © 2025 - Designé par <a href="https://studio-allgraphic.com/" target="_blank"> Studio All'graphic</a></p>
                     </div>
                 </div>
             </div>
