@@ -289,7 +289,12 @@ img {
 img:hover {
   transform: scale(1.1);
 }
-
+.img-immo{
+  margin-top: 100px;
+}
+.img-immo:hover{
+  transform: none;
+}
 .fill-btn{
   font-family: var(--font-primary);
   font-weight: 500;

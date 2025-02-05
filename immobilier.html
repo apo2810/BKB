@@ -109,166 +109,99 @@
                     </p>
             </div>
             <div class="immo-container">
-                <img class="immo" src="assets/images/affiches-immo.jpg" alt="Affiches Immo">
-                <img class="immo" src="assets/images/immo.jpg" alt="Immo">
-                <img class="immo" src="assets/images/immo 2.jpg" alt="Immo 2">
-              </div>
-              
-              <!-- Styles -->
-              <style>
-                .immo-container {
-                  display: flex;
-                  justify-content: center; /* Centrer horizontalement les images */
-                  gap: 20px; /* Espacement entre les images */
-                }
-              
-                .immo {
-                  max-width: 200%;
-                  height: auto;
-                  width: 100%; /* Définit une largeur fixe pour les images */
-                }
-              </style>
-              
-            </main>
-            <main id="main" class="retro-section">
-                <div id="services" class="section">
-                    <div class="retro-header"></div>
-            <h2>Ils nous font confiance</h2>
-            </div>
-            <div class="retro-grid-immo ref-imo">
-                <div class="retro-card-immo">
-                    <div class="retro-logo-immo">
-                        <img src="assets/images/logos/immo/Consultim_60x80_ALOUER.png" alt="Hotel le prince de galles">
-                    </div>
+              <div id="carouselImmobilier" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                
+                <!-- Indicateurs -->
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselImmobilier" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselImmobilier" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselImmobilier" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-  
-                <div class="retro-card-immo">
-                    <div class="retro-logo-immo">
-                        <img src="assets/images/logos/immo/GROUPE NADLANE_80x60_Locaux.png" alt="Nikki Beach">
-                    </div>
-                </div>
-  
-                <div class="retro-card-immo">
-                    <div class="retro-logo-immo">
-                        <img src="assets/images/logos/immo/GuyHoquet03_260x190.png" alt="Pernod Ricard">
-                    </div>
-                </div>
-  
-                <div class="retro-card-immo">
-                    <div class="retro-logo-immo">
-                        <img src="assets/images/logos/immo/Ibu03_260x216.png" alt="Sony Playstation">
-                    </div>
-                </div>
-  
-                <div class="retro-card-immo">
-                    <div class="retro-logo-immo">
-                        <img src="assets/images/logos/immo/J2SI01_299x275_V2.png" alt="Westin">
-                    </div>
-                </div>
-                <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/Kalstone02_230x200.png" alt="Actual Audition">
+            
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/images/immo.jpg" class="carousel-img" alt="affiche immobilier" loading="lazy">
                   </div>
-              </div>
-  
-              <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/L'ENSEIGNE PARSIENNE_80x60.png" alt="Akira">
+                  <div class="carousel-item">
+                    <img src="assets/images/immo-2.jpg" class="carousel-img" alt="affiche immobilier" loading="lazy">
                   </div>
-              </div>
-  
-              <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/LBP02_260x220.png" alt="Nikki Beach">
+                  <div class="carousel-item">
+                    <img src="assets/images/affiches-immo.jpg" class="carousel-img" alt="affiche immobilier" loading="lazy">
                   </div>
-              </div>
-  
-              <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/LL_80x60_TR.png" alt="B et K">
-                  </div>
-              </div>
-  
-              <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/LTI_80x60_2e_Alouer.png" alt="Capi France">
-                  </div>
-              </div>
-  
-              <div class="retro-card-immo">
-                  <div class="retro-logo-immo">
-                      <img src="assets/images/logos/immo/LTI_80x60_2e_TR.png" alt="CBRE">
-                  </div>
-              </div>
-              <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/Moriss01_330x261.png" alt="Century21">
                 </div>
-            </div>
-  
-            <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/Orpi01_74x80.png" alt="Commerce Immo">
-                </div>
-            </div>
-  
-            <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/Panneau_Alouer_80x60.png" alt="CONSULT'IM">
-                </div>
-            </div>
-  
-            <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/PC_80x60.png" alt="Demarche Française">
-                </div>
-            </div>
-  
-            <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/PetrusCapital_80x60_ALouer.png" alt="Gbail">
-                </div>
-            </div>
-  
-            <div class="retro-card-immo">
-                <div class="retro-logo-immo">
-                    <img src="assets/images/logos/immo/Realty'z 06_330x285.png" alt="Groupe Advisor">
-                </div>
-            </div>
-            <div class="retro-card-immo">
-              <div class="retro-logo-immo">
-                  <img src="assets/images/logos/immo/RODEX.png" alt="Hugues Chevalier">
+            
+                <!-- Boutons de navigation -->
+                <button class="carousel-control-prev custom-btn" type="button" data-bs-target="#carouselImmobilier" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Précédent</span>
+                </button>
+                <button class="carousel-control-next custom-btn" type="button" data-bs-target="#carouselImmobilier" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Suivant</span>
+                </button>
+            
               </div>
-          </div>
-  
-          <div class="retro-card-immo">
-              <div class="retro-logo-immo">
-                  <img src="assets/images/logos/immo/RV.png" alt="Iburoshop">
-              </div>
-          </div>
-  
-          <div class="retro-card-immo">
-              <div class="retro-logo-immo">
-                  <img src="assets/images/logos/immo/SDC_Bandeau 80x60.png" alt="J2SI">
-              </div>
-          </div>
-  
-          <div class="retro-card-immo">
-              <div class="retro-logo-immo">
-                  <img src="assets/images/logos/immo/Spotin11_60x60.png" alt="KALSTONE">
-              </div>
-          </div>
-  
-          <div class="retro-card-immo">
-              <div class="retro-logo-immo">
-                  <img src="assets/images/logos/immo/WP66_V5_243x281.png" alt="L'enseigne PARSIENNE">
-              </div>
-          </div>
             </div>
+            
+            <!-- CSS pour ajuster la taille -->
+            <style>
+              .immo-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50vh; /* Hauteur = 50% de la hauteur de l'écran */
+              }
+            
+              #carouselImmobilier {
+                width: 60%; /* Largeur du carrousel = 60% de l'écran */
+                height: 100%; /* Il occupe toute la hauteur de son conteneur */
+              }
+            
+              .carousel-inner, .carousel-item {
+                width: 100%;
+                height: 100%;
+              }
+            
+              .carousel-img {
+                width: 100%; /* Largeur = 100% du carrousel */
+                height: 100%; /* Hauteur = 100% du carrousel */
+                object-fit: contain; /* L'image s'adapte sans être rognée */
+              }
+            </style> 
+    </div>
+  </main>
+  <main id="main" class="retro-section">
+    <div id="services" class="section">
+        <div class="retro-header"></div>
+        <h2>Ils nous font confiance</h2>
+        <div class="img-container">
+            <img src="assets/images/immobilier.jpg" alt="Immobilier" class="img-immo">
         </div>
     </div>
-    
-</main>
+  </main>
+
+  <!-- CSS mis à jour -->
+  <style>
+    .section {
+      text-align: center; /* Centre le texte et l’image */
+    }
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%; /* Augmente la largeur du conteneur */
+      max-width: 800px; /* Augmente la taille maximale */
+      margin: 0 auto; /* Centre le conteneur */
+    }
+
+    .img-immo {
+      width: 100%; /* L’image prend toute la largeur du conteneur */
+      height: auto; /* Garde les proportions */
+    }
+  </style>
+
+
 
   <!--  Footer  -->
   <footer id="footer" class="footer-section">
