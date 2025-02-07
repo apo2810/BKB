@@ -37,7 +37,7 @@
 <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/images/logo.png" alt="logo fse">
+        <img src="assets/images/logo.png" alt="logo BKB">
       </a>
       <nav id="navbar" class="navbar">
         <ul>
@@ -208,7 +208,7 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="index.html" class="logo d-flex align-items-center">
-                              <img src="assets/images/logo.png" alt="logo">
+                              <img src="assets/images/logo.png" alt="logo BKB">
                             </a>
                         </div>
                         <div class="footer-text">
@@ -246,7 +246,7 @@
                           <div class="footer-text">
                               <p><i class="bi bi-geo-alt-fill mr-15"></i>155-159-- BATIMENT ENERGY 5, 155 RUE DU DOCTEUR BAUER, 93400 SAINT-OUEN-SUR-SEINE</p>
                               <p><i class="bi bi-telephone-inbound-fill mr-15"></i>Tel: 06 25 26 88 65</p>
-                              <p><i class="bi bi-envelope-fill mr-15"></i> @mail.fr</p>
+                              <p><i class="bi bi-envelope-fill mr-15"></i>bkbdiffcontact@gmail.com</p>
                           </div>
                     </div>
                     <div class="service-widget footer-widget">
