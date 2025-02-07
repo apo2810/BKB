@@ -34,7 +34,7 @@
 </head>
 
 <body>
-<header id="header" class="header d-flex align-items-center sticked stikcy-menu">
+  <header id="header" class="header d-flex align-items-center sticked stikcy-menu">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/images/logo.png" alt="logo BKB">
@@ -42,19 +42,44 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html" class="">Accueil</a></li>
-          <li class="dropdown"><a href="services.html"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="souples.html"><span>Signaletique</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="services.html#incendie">Incendie</a></li>
-              <li><a href="services.html#alarmes">Alarme Intrusion</a></li>
-              <li><a href="services.html#videosurveillance">Vidéosurveillance</a></li>
-              <li><a href="services.html#vdi">VDI</a></li>
-              <li><a href="services.html#controle">Contrôle d'accès</a></li>
-              <li><a href="services.html#porte">Porte - Portails et Automatismes</a></li>
-              <li><a href="services.html#gtb">GTB</a></li>
+              <li class="dropdown"><a href="souples.html"><span>Supports souples</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="souples.html#adhesifs" class="">Adhésifs</a></li>
+                  <li><a href="souples.html#bache" class="">Bâches</a></li>
+                  <li><a href="souples.html#poster" class="">Poster</a></li>
+                  <li><a href="souples.html#tissu" class="">Tissu imprimé</a></li>
+                  <li><a href="souples.html#habillage" class="">Habillage véhicule</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="rigides.html"><span>Supports rigides</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="rigides.html#plaques" class="">Plaques professionnelles</a></li>
+                  <li><a href="rigides.html#panneaux" class="">Panneaux publicitaires </a></li>
+                  <li><a href="rigides.html#plv" class="">PLV</a></li>
+                  <li><a href="rigides.html#stands" class="">Stands</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="enseignes.html"><span>Enseignes</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="enseignes.html#drapeaux"><span>Drapeaux</span> <i class=""></i></a>
+                  <li class="dropdown"><a href="enseignes.html#lettres"><span>Lettres découpées</span> <i class=""></i></a>
+                  <li class="dropdown"><a href="enseignes.html#toles"><span>Tôles tablettes</span> <i class=""></i></a>
+                  <li class="dropdown"><a href="enseignes.html#stores"><span>Stores</span> <i class=""></i></a>
+                  <li class="dropdown"><a href="enseignes.html#neons"><span>Néons</span> <i class=""></i></a>
+                  </ul>
             </ul>
           </li>
-          <li><a href="recrutement.html" class="">Recrutement</a></li>
-          <li><a href="reference.html" class="">Références</a></li>
+          <li class="dropdown"><a href="film actifs.html"><span>Films actifs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li class="dropdown"><a href="film actifs.html#securite"><span>Sécurité</span> <i class=""></i></a></li>
+              <li class="dropdown"><a href="film actifs.html#decoratif"><span>Décoratif</span> <i class=""></i></a></li>
+              <li class="dropdown"><a href="film actifs.html#solaire"><span>Contrôle solaire </span> <i class=""></i></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="immobilier.html"><span>Immobilier</span><i class=""></i></a>
+          </li>
         </ul>
       </nav><!-- .navbar -->
       <a href="contact.html" class="btn-get-started hide-on-mobile">Nous contacter</a>
@@ -85,115 +110,79 @@
 
   <main id="main">
 
-    <div class="single-page">
-      <!-- Start Contact Section -->
-    <div id="contact" class="contact-section section">
-     
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12" data-aos="fade-right">
-            <div class="contact-information-box-3">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="single-contact-info-box">
-                    <div class="contact-info">
-                      <h6>Adresse:</h6>
-                      <p>117 Avenue du Président Salvador Allende</p> 
-                      <p>93100 Montreuil</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="single-contact-info-box">
-                    <div class="contact-info">
-                      <h6>Telephone:</h6>
-                      <p>01 48 11 12 26</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="single-contact-info-box">
-                    <div class="contact-info">
-                      <h6>Email:</h6>
-                      <p>contact@fsesecurite.fr</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8 col-md-12" data-aos="fade-left">
-            <div class="contact-form-box contact-form contact-form-3">
-              <div class="form-container-box">
-                <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php">
-                  <div class="controls">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group form-input-box">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Name*"
-                            required="required" data-error="Name is required.">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group form-input-box">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
-                            required="required" data-error="Valid email is required.">
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group form-input-box">
-                          <input type="text" class="form-control" name="subject" placeholder="Subject"
-                            required="required">
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-group form-input-box">
-                          <textarea class="form-control" id="message" name="message" rows="7"
-                            placeholder="Write Your Message*" required="required"
-                            data-error="Please, leave us a message."></textarea>
-                          <div class="help-block with-errors"></div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <button type="submit" data-text="Send Message">Envoyer</button>
-                      </div>
-                      <div class="messages">
-                        <div class="alert alert alert-success alert-dismissable alert-dismissable hidden"
-                          id="msgSubmit"><button type="button" class="close" data-dismiss="alert"
-                            aria-hidden="true">&times;</button> Thank You! your message has been sent. </div>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-12">
+    
+      <!--Test-->
+      
+      <div id="contact" class="contact-section section">
+        <div class="container">
+          <div class="row">
+            <!-- Formulaire de Contact -->
+            <div class="col-lg-12 col-md-12">
               <div class="contact-form-box contact-form contact-form-3">
-                <div class="form-container-box">
-                  <form class="rd-mailform rd-mailform_style-1" data-form-output="form-output-global" data-form-type="contact" method="post">
-                    <div class="form-wrap form-wrap_icon linear-icon-man">
-                      <input class="form-input" id="contact-name" type="text" name="name" required>
-                      <label class="form-label" for="contact-name">Nom</label>
-                    </div>
-                    <div class="form-wrap form-wrap_icon linear-icon-man">
-                      <input class="form-input" id="contact-email" type="email" name="email" required>
-                      <label class="form-label" for="contact-email">E-mail</label>
-                    </div>
-                    <div class="form-wrap form-wrap_icon linear-icon-man">
-                      <textarea class="form-input" id="contact-message" name="message" required></textarea>
-                      <label class="form-label" for="contact-message">Message</label>
-                    </div>
-                    <button class="btn-get-started hide-on-mobile" type="submit">Envoyer</button>
-                  </form>
-                </div>
+                <form class="rd-mailform rd-mailform_style-1" action="send_mail.php" method="post">
+                  <div class="form-group-row">
+                    <h6>Raison Sociale :</h6>
+                    <input
+                      class="form-control"
+                      id="contact-name"
+                      type="text"
+                      name="name"
+                      required
+                      placeholder="Votre Raison Sociale*"
+                    >
+                  </div>
+                  <div class="form-group-row">
+                    <h6>Siret :</h6>
+                    <input
+                      class="form-control"
+                      id="contact-siret"
+                      type="text"
+                      name="siret"
+                      required
+                      placeholder="123 456 789 00012*"
+                    >
+                  </div>
+                  <div class="form-group-row">
+                    <h6>Téléphone :</h6>
+                    <input
+                      class="form-control"
+                      id="contact-phone"
+                      type="tel"
+                      name="phone"
+                      required
+                      placeholder="+33 1 23 45 67 89*"
+                    >
+                  </div>
+                  <div class="form-group-row">
+                    <h6>Email :</h6>
+                    <input
+                      class="form-control"
+                      id="contact-email"
+                      type="email"
+                      name="email"
+                      required
+                      placeholder="contact@votreentreprise.com*"
+                    >
+                  </div>
+                  <div class="form-group-row">
+                    <h6>Message :</h6>
+                    <textarea
+                      class="form-control"
+                      id="contact-message"
+                      name="message"
+                      required
+                      placeholder="Votre Message Ici*"
+                    ></textarea>
+                  </div>
+                  <button class="btn-get-started" type="submit">Envoyer</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      
+      
     <!-- End Contact Section -->
     </div>
 
@@ -212,12 +201,15 @@
                             </a>
                         </div>
                         <div class="footer-text">
-                            <p>Notre objectif, bâtir votre sécurité, avec nos solutions! Des spécialistes au service de votre sécurité.</p>
+                            <p>Votre visibilité via tous supports.<br/>Création, impression et pose.</p>
                         </div>
                         <div class="footer-social-icon">
-                            <span>Suivez nous</span>
-                            <a href="#" class="instagram"><img src="assets/images/fses-blc.png" class="bi "></img></a>
-                            <a href="https://www.linkedin.com/company/fse-france-securite-electronique/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            <span>Films actifs</span>
+                            <ul class="list">
+                              <li><a href="film actifs.html#securite">Sécurité</a></li>
+                              <li><a href="film actifs.html#decoratif">Décoratif</a></li>
+                              <li><a href="film actifs.html#solaire">Contrôle solaire </a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -225,16 +217,19 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
                       <div class="service-widget footer-widget">
                         <div class="footer-widget-heading">
-                            <h3>Services</h3>
+                            <h3>Signaletique</h3>
                         </div>
                           <ul class="list">
-                            <li><a href="services.html#incendie">Incendie</a></li>
-                            <li><a href="services.html#alarmes">Alarme Intrusion</a></li>
-                            <li><a href="services.html#videosurveillance">Vidéosurveillance</a></li>
-                            <li><a href="services.html#vdi">VDI</a></li>
-                            <li><a href="services.html#controle">Contrôle d'accès</a></li>
-                            <li><a href="services.html#porte">Porte - Portails et Automatismes</a></li>
-                            <li><a href="services.html#gtb">GTB</a></li>
+                            <li><a href="souples.html#adhesifs" class="">Adhésifs</a></li>
+                            <li><a href="souples.html#bache" class="">Bâches</a></li>
+                            <li><a href="souples.html#poster" class="">Poster</a></li>
+                            <li><a href="souples.html#tissu" class="">Tissu imprimé</a></li>
+                            <li><a href="souples.html#habillage" class="">Habillage véhicule</a></li>
+                            <li><a href="rigides.html#plaques" class="">Plaques professionnelles</a></li>
+                            <li><a href="rigides.html#panneaux" class="">Panneaux publicitaires </a></li>
+                            <li><a href="rigides.html#plv" class="">PLV</a></li>
+                            <li><a href="rigides.html#stands" class="">Stands</a></li>
+                            <li><a href="enseignes.html" class="">Enseignes</a></li>
                           </ul>
                       </div>
                   </div>
@@ -244,9 +239,9 @@
                             <h3>Contacts</h3>
                         </div>
                           <div class="footer-text">
-                              <p><i class="bi bi-geo-alt-fill mr-15"></i>155-159-- BATIMENT ENERGY 5, 155 RUE DU DOCTEUR BAUER, 93400 SAINT-OUEN-SUR-SEINE</p>
-                              <p><i class="bi bi-telephone-inbound-fill mr-15"></i>Tel: 06 25 26 88 65</p>
-                              <p><i class="bi bi-envelope-fill mr-15"></i>bkbdiffcontact@gmail.com</p>
+                            <p><i class="bi bi-geo-alt-fill mr-15"></i>155-159-- BATIMENT ENERGY 5, 155 RUE DU DOCTEUR BAUER, 93400 SAINT-OUEN-SUR-SEINE</p>
+                            <p><i class="bi bi-telephone-inbound-fill mr-15"></i>Tel: 06 25 26 88 65</p>
+                            <p><i class="bi bi-envelope-fill mr-15"></i> bkbdiffcontact@gmail.com</p>
                           </div>
                     </div>
                     <div class="service-widget footer-widget">
@@ -269,7 +264,6 @@
         </div>
     </div>
   </footer>
-  
   <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center active">
@@ -293,28 +287,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/javascripts/main.js"></script>
-    <!-- Global Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <!-- Javascript-->
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- coded by Ragnar-->
-    <?php
-    if (isset($_POST['message'])) {
-        $entete  = 'MIME-Version: 1.0' . "\r\n";
-        $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-        $entete .= 'From: FSE.com' . "\r\n";
-        $entete .= 'Reply-to: ' . $_POST['email'];
 
-        $message = '<h1>Message envoyé depuis la page Contact de FSE</h1>
-        <p><b>Email : </b>' . $_POST['email'] . '<br>
-        <p><b>nom : </b>' . $_POST['name'] . '<br>
-        <b>Message : </b>' . htmlspecialchars($_POST['message']) . '</p>';
 
-        $retour = mail('contact@fsesecurite.fr', 'Envoi depuis page Contact', $message, $entete);
-        if($retour)
-            echo '<p>Votre message a bien été envoyé.</p>';
-    }
-    ?>
-  </body>
-</html>
+
+</body></html>
